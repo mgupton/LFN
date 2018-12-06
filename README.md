@@ -4,7 +4,7 @@ Log File Normalizer (LFN) is a Windows Powershell implemented solution that cons
 In particular, this script overcomes the limitations with the flat-file collector only supporting a limited number of file rotation and file naming schemes. In addition, the script will convert Unicode encoded (UTF-8, UTF-16 etc) files to ASCII. 
 
 
-For example, if the orininal file is `access.log` the output file could be specified as `access_normalized.log`. And the script would output the current log file to `access_nornalized.log`. When the output log file reaches a certain size limit the script will archive the file using the scheme `<log file base name>_YYYYMMDD_HHMMSS.<original file extension>`. A specific example of this would be, `access_normalized_20181206_120000.log`.
+For example, if the original file is `access.log` the output file could be specified as `access_normalized.log`. And the script would output the current log file to `access_nornalized.log`. When the output log file reaches a certain size limit the script will archive the file using the scheme `<log file base name>_YYYYMMDD_HHMMSS.<original file extension>`. A specific example of this would be, `access_normalized_20181206_120000.log`.
 
 
 The archive file naming scheme is `<log file base name>_YYYYMMDD_HHMMSS.<original file extension>`. Where YYYYMMDD is a four digit year, two digit month and two digit day. And HHMMSS is a two digit hour, two digit minute and two digit second.
